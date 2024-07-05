@@ -5,6 +5,7 @@
 /storage/*.key
 /vendor
 /db-data
+/logs
 .env
 .env.backup
 .env.production
