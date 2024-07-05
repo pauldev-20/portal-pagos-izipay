@@ -1,0 +1,20 @@
+.message {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+    color: #636400;
+    width:240px;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.message .info {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}

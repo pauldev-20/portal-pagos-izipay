@@ -1,0 +1,49 @@
+version: "3.0"
+
+services:
+  web:
+    container_name: app-nginx-portal
+    build: 
+      context: .
+      dockerfile: /nginx/Dockerfile
+    ports:
+      - "8000:80"
+    volumes:
+      - ./:/var/www/
+      - ./logs/nginx:/var/log/nginx/
+    networks:
+      - app-network  
+    
+  app:
+    container_name: app-portal-pagos
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    working_dir: /var/www/
+    volumes:
+      - ./:/var/www/
+      - ./logs/php.log:/var/log/fpm-php.www.log
+    networks:
+      - app-network
+    
+  db:
+    container_name: app-mysql-muni
+    build: 
+      context: ./mysql
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - ./db-data:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: portalpagos
+      MYSQL_PASSWORD: portalpass
+      MYSQL_ROOT_PASSWORD: portalpass
+    networks:
+      - app-network
+networks:
+  app-network:
+    driver: bridge
+
+
+
+  
