@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: /nginx/Dockerfile
     ports:
-      - "8000:80"
+      - "8080:80"
     volumes:
       - ./:/var/www/
       - ./logs/nginx:/var/log/nginx/
@@ -43,7 +43,3 @@ services:
 networks:
   app-network:
     driver: bridge
-
-
-
-  

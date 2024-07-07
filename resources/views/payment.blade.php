@@ -3,7 +3,7 @@
 
 <head>
     @include('components.head')
-    <script type="text/javascript" src="https://static.micuentaweb.pe/static/js/krypton-client/V4.0/stable/kr-payment-form.min.js" kr-public-key="{{config('services.izipay.public_key')}}" kr-post-url-success="paid.php" ; kr-language="es-ES">
+    <script type="text/javascript" src="https://static.micuentaweb.pe/static/js/krypton-client/V4.0/stable/kr-payment-form.min.js" kr-public-key="{{config('services.izipay.public_key')}}" kr-post-url-success="paid" ; kr-language="es-ES">
     </script>
 
     <link rel="stylesheet" ref="https://static.micuentaweb.pe/static/js/krypton-client/V4.0/ext/neon-reset.min.css">

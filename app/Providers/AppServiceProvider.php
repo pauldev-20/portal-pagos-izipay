@@ -14,7 +14,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        app()->bind(AuthenticableOdoo::class, function(){
+        app()->singleton(AuthenticableOdoo::class, function(){
             return new AuthenticableOdoo();
         });
     }
