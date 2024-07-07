@@ -28,7 +28,7 @@ Route::post('/users/pagos', [PagoController::class, 'registrarPagosPendientes'])
 
 Route::get('/izipay/authentication',[TransactionController::class, 'requestAuthentication']);
 Route::post('/izipay/requestpayment',[TransactionController::class, 'requestPayment'])->name('izipay.requestpayment');
-Route::post('/izipay/paid.php',[TransactionController::class, 'confirmPayment'])->name('izipay.confirm');
+Route::post('/izipay/paid',[TransactionController::class, 'confirmPayment'])->name('izipay.confirm');
 
 Route::get('/transaction/validates', [TransactionController::class, 'getTransactionValidates']);
 Route::post('/users/pagos/validateServicios', [PagoController::class, 'validateServicios']);
