@@ -47,10 +47,16 @@ IZIPAY_HASH_KEY=fva7JZ2vSY7MhRuOPamu6U5HlpabAoEf8VmFHQupspnXB
 1. Para levantar la aplicación ejecute el docker-compose.yml en su terminal
 
 ```bash
-docker compose up --build -d
+docker compose build app
 ```
 
-2. Una vez levantado ingrese al contenedor de la aplicación para levantar la aplicación laravel siguiendo los siguientes comandos:
+2. Ejecute los servicios del docker-compose en segundo plano
+
+```bash
+docker compose up -d
+```
+
+3. Una vez levantado ingrese al contenedor de la aplicación para levantar la aplicación laravel siguiendo los siguientes comandos:
 
 ```bash
 docker compose exec app sh
@@ -64,7 +70,14 @@ php artisan cache:clear
 php artisan migrate --seed
 ```
 
+4. Si esta levantando sus contenedores en un propio dominio y no en localhost cambie esta dirección en su archivo .env
+
+```bash
+APP_URL=https://dominio.example.com
+```
+
 ## Capturas de Pantalla
-<img src="./public/captures/image.png" alt="Imagen" height=400>
-<img src="./public/captures/image-1.png" alt="Imagen 1" height=400>
-<img src="./public/captures/image-2.png" alt="Imagen 2" height=400>
+<img src="./public/images/image-1.png" alt="Imagen 1" height=400>
+<img src="./public/images/image-2.png" alt="Imagen 2" height=400>
+<img src="./public/images/image-3.png" alt="Imagen 3" height=400>
+<img src="./public/images/image-4.png" alt="Imagen 4" height=400>
