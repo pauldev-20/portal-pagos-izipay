@@ -1,14 +1,15 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Municipalidad Distrital de Santa María</title>
+<title>Portal de Pagos Izipay</title>
 <link rel="icon" href="{{ asset('images/logo_1.png') }}" type="image/x-icon" />
 
-<link rel="stylesheet" href="{{ asset('js/bootstrap.min.js') }}">
+<base href="/"> 
+<link href="{{ asset('js/bootstrap.min.js') }}">
 <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 
-<link rel="stylesheet" href="{{ asset('js/bootstrap.bundle.js') }}">
-<link rel="stylesheet" href="{{ asset('js/bootstrap.bundle.min.js')}}">
+<link href="{{ asset('js/bootstrap.bundle.js') }}">
+<link href="{{ asset('js/bootstrap.bundle.min.js')}}">
 
 <script src="{{ asset('js/loading.js') }}"></script>
 
