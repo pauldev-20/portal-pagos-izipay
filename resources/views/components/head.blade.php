@@ -4,11 +4,12 @@
 <title>Portal de Pagos Izipay</title>
 <link rel="icon" href="{{ asset('images/logo_1.png') }}" type="image/x-icon" />
 
-<link rel="stylesheet" href="{{ asset('js/bootstrap.min.js') }}">
+<base href="/"> 
+<link href="{{ asset('js/bootstrap.min.js') }}">
 <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 
-<link rel="stylesheet" href="{{ asset('js/bootstrap.bundle.js') }}">
-<link rel="stylesheet" href="{{ asset('js/bootstrap.bundle.min.js')}}">
+<link href="{{ asset('js/bootstrap.bundle.js') }}">
+<link href="{{ asset('js/bootstrap.bundle.min.js')}}">
 
 <script src="{{ asset('js/loading.js') }}"></script>
 
